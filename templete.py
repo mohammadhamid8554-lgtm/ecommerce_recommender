@@ -24,7 +24,8 @@ list_of_files = [
     "requirements.txt",
     "setup.py",
     "README.md",
-    "test_setup.py"
+    "test_setup.py",
+    ".env"
 ]
 
 for filepath in list_of_files:

@@ -7,4 +7,6 @@ fastapi
 uvicorn
 streamlit
 python-dotenv
+sqlalchemy
+pymysql
 -e .

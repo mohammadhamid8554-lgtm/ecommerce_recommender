@@ -41,3 +41,22 @@ An end-to-end, production-ready recommendation system designed to boost customer
                  │
                  ▼
      [ Streamlit UI Dashboard ]
+```
+
+## Database Setup
+
+Data ingestion reads MySQL settings from environment variables or a `.env` file
+in the project root. Set the following values, replacing the password with the
+password for your MySQL account:
+
+```dotenv
+DB_USER=root
+DB_PASSWORD=your_actual_mysql_password
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=ecommerce_db
+```
+
+The configured MySQL account must be allowed to connect from `localhost`, and
+the database must contain the `online_retail_ii` table. Do not commit `.env`;
+it is ignored by Git.
