@@ -112,12 +112,3 @@ class DataTransformation:
             raise CustomException(e, sys)
 
 
-if __name__ == "__main__":
-    from src.components.data_ingestion import DataIngestion
-    
-    ingestion = DataIngestion()
-    train_path, test_path = ingestion.initiate_data_ingestion()
-    
-    transformer = DataTransformation()
-    transformer.initiate_data_transformation(train_path, test_path)
-    print("Data Transformation executed successfully!")
