@@ -55,7 +55,7 @@ class DataIngestion:
             engine = create_engine(connection_url)
 
             # 2. Query transactional data from MySQL
-            query = "SELECT * FROM churn_data"
+            query = "SELECT * FROM raw_online_retail"
             df = pd.read_sql(query, con=engine)
             logging.info(f"Query successful. Extracted dataframe with shape: {df.shape}")
 

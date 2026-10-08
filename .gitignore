@@ -4,6 +4,11 @@ __pycache__/
 *$py.class
 
 artifacts/raw.csv
+artifacts/
+logs/
+venv/
+*.pkl
+*.csv
 
 
 # C extensions
